@@ -5,7 +5,7 @@ from source_code import classifier
 from azureml.core.compute import ComputeTarget, AmlCompute
 from azureml.core import Workspace
 ws = Workspace.get(name='myProject',
-               subscription_id='328f8633-9a4b-4467-8390-65e657ac9e18',
+               subscription_id='##########',
                resource_group='ml_projects'
                )
 
