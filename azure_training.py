@@ -6,7 +6,7 @@ from azureml.core.compute import ComputeTarget, AmlCompute
 from azureml.core import Workspace
 ws = Workspace.get(name='myProject',
                subscription_id='##########',
-               resource_group='ml_projects'
+               resource_group='###########'
                )
 
 ws.write_config(path="D:\Machine Learning Models\Machine_Learning_Projects\parkinson's_disease_detection_project", file_name="config.json")
