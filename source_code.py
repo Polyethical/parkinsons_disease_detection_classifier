@@ -95,17 +95,7 @@ classifier.fit(X_train, y_train)
 # accuracy_score(y_test, y_pred)
 
 # Applying k-Fold Cross Validation
-# accuracies = cross_val_score(estimator = classifier, X=X_train, y=y_train, cv=10)
-# print("Accuracy: {:.2f} %".format(accuracies.mean()*100))
-# print("Standard Deviation: {:.2f} %".format(accuracies.std()*100))
-
-
-
-# TODO #1 Preproccess names into label encoded data V
-
-# TODO #2 Preproccess all other numerical data to be within range in independant variable V
-
-# TODO #3 Turn all lists into new dataset and select all values from the dataset for new X variable
-
-# TODO #4 Train model on data and try to get accuracy to 80%
+accuracies = cross_val_score(estimator = classifier, X=X_train, y=y_train, cv=10)
+print("Accuracy: {:.2f} %".format(accuracies.mean()*100))
+print("Standard Deviation: {:.2f} %".format(accuracies.std()*100))
 
